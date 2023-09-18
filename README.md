@@ -7,6 +7,10 @@ In the terminal:
 * echo "export OPENAI_API_KEY='key in email'" >> ~/.zshrc
 * source ~/.zshrc
 * unvicorn main:app
+* if importerror: could not import openai package appears:
+* deactivate
+* source env/bin/activate
+
 
 Instructions to setup front-end react app:  
 In the terminal:  
