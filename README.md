@@ -8,5 +8,6 @@ In the terminal:
 
 Instructions to setup front-end react app:
 In the terminal:
+* cd front-end/r2d2/
 * npm install
 * npm run dev
