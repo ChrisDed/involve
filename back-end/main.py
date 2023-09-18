@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from mangum import Mangum
 from pydantic import BaseModel, Field
@@ -7,7 +8,7 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import CommaSeparatedListOutputParser, ResponseSchema, StructuredOutputParser
 from fastapi.middleware.cors import CORSMiddleware
 
-llm = OpenAI(openai_api_key="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", max_tokens=4000)
+llm = OpenAI(openai_api_key=os.environ["OPENAI_API_KEY"], max_tokens=4000)
 chat_model = ChatOpenAI(openai_api_key="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")
 output_parser = CommaSeparatedListOutputParser()
 format_instructions = output_parser.get_format_instructions()
