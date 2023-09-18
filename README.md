@@ -11,3 +11,7 @@ In the terminal:
 * cd front-end/r2d2/
 * npm install
 * npm run dev
+
+In the browser, go to http://localhost:3000
+Enter in an industry to get competitive research on top companies in the specified industry
+Type in a name to get a few email sequences targeted towards the specified name
