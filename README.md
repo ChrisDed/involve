@@ -4,6 +4,8 @@ In the terminal:
 * python3.9 -m venv env
 * source env/bin/activate
 * Pip3 install -r requirements.txt
+* echo "export OPENAI_API_KEY='key in email'" >> ~/.zshrc
+* source ~/.zshrc
 * unvicorn main:app
 
 Instructions to setup front-end react app:  
