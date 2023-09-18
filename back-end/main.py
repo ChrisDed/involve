@@ -70,9 +70,8 @@ def research_competitors(competitors):
     # For this reason, I did not use a SequentialChain
     for company in competitors:
         prompt = PromptTemplate(
-            template = "You are a market analyst that conducts complex competitive research. Conduct extensive research on your competitor {company}, gathering key competitive intelligence data. \n{format_instructions}",
-            input_variables=["company"],
-            partial_variables={"format_instructions": format_instructions}
+            template = "You are a market analyst that conducts complex competitive research. Conduct extensive research on your competitor {company}, gathering key competitive intelligence data.",
+            input_variables=["company"]
         )
         input = prompt.format(company=company)
         output = llm(input)
