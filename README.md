@@ -1,11 +1,12 @@
-Instructions to install and run backend environment on Python 3.9.9:
+Instructions to install and run backend environment on Python 3.9:
 In the terminal:
 * cd back-end
-virtualenv env_name
-Source env_name/bin/activate
-Pip3 install -r requirements.txt
-unvicorn main:app
+* python3.9 -m venv env
+* source env/bin/activate
+* Pip3 install -r requirements.txt
+* unvicorn main:app
 
 Instructions to setup front-end react app:
-
-Npm run dev
+In the terminal:
+* npm install
+* npm run dev
